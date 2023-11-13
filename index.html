@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Gangster SMP - Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link ScrollReveal library -->
+    <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="heading-container">
+            <h1>Welcome to <span class="rgb-text">GANGSTER SMP</span></h1>
+            <p class="glow-text">Explore, Create, Conquer</p>
+        </div>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="section1.html">Server Info</a></li>
+                <li><a href="section2.html">About Us</a></li>
+                <li><a href="section3.html">Security</a></li>
+                <li><a href="section4.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1 -->
+        <section id="section1" class="scroll-section">
+            <a href="section1.html">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2>Server Info</h2>
+                        <p>click here to see about server info.</p>
+                    </div>
+                    <div class="section-image">
+                        <img src="section1-image.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section2" class="scroll-section">
+            <a href="section2.html">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2>About us</h2>
+                        <p>Kown good about us.</p>
+                    </div>
+                    <div class="section-image">
+                        <img src="section2-image.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="section3" class="scroll-section">
+            <a href="section3.html">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2>Security</h2>
+                        <p>Full tight security.</p>
+                    </div>
+                    <div class="section-image">
+                        <img src="section3-image.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section4" class="scroll-section">
+            <a href="section4.html">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2>Join Us</h2>
+                        <p>Join us i will give u cookie.</p>
+                    </div>
+                    <div class="section-image">
+                        <img src="section4-image.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+
+    <script>
+        // Initialize ScrollReveal
+        document.addEventListener('DOMContentLoaded', function() {
+            ScrollReveal().reveal('.scroll-section', {
+                delay: 200,
+                distance: '20px',
+                easing: 'cubic-bezier(0.5, 0, 0, 1)',
+                interval: 600,
+                origin: 'bottom',
+                scale: 1,
+                viewFactor: 0.5,
+            });
+        });
+    </script>
+<div id="image-container"></div>
+<script src="script.js"></script>
+
+</body>
+</html>

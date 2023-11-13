@@ -1,0 +1,331 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Dark background color */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    padding: 60px 0;
+    text-align: center;
+    background-image: url('header-image.jpg');
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    font-size: 36px;
+    position: relative;
+    color: #00ff37;
+    text-shadow: 0 0 10px rgb(0, 255, 191);
+    animation: bannerAnimation 5s infinite, glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes bannerAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgb(255, 153, 0);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(0, 255, 98);
+    }
+}
+
+.section-container {
+    padding: 40px;
+    background-color: #444; /* Grey box color */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#server-info, #security, #introduction, #join-now {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+#server-info.reveal, #security.reveal, #introduction.reveal, #join-now.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#server-info h2, #security h2, #introduction h2, #join-now h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#server-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#server-info li {
+    margin-bottom: 8px;
+}
+
+#join-now p {
+    margin-bottom: 20px;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00ff37;
+    color: #333;
+    text-decoration: blink;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.join-button:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+.made-by {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.made-by::after {
+    content: 'Made by Game Dev Shourya';
+    display: block;
+    position: relative;
+    color: #00ff00; /* Green color for the glowing effect */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: glow 2s infinite alternate;
+}
+/* ... (previous CSS styles) */
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Scroll Section Styles */
+.scroll-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-text {
+    flex: 1;
+}
+
+.section-image {
+    flex: 1;
+    margin-left: 20px; /* Adjust the margin as needed */
+    position: relative;
+}
+
+.section-image img {
+    width: 100%;
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+
+/* ... (previous CSS styles) */
+
+/* Heading Styles */
+.heading-container {
+    text-align: center;
+    position: relative;
+    padding: 120px 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #fff;
+    position: relative;
+}
+
+.rgb-text {
+    color: #ffd700; /* Golden color for the glowing effect */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+    }
+}
+
+/* Glow Text Styles */
+.glow-text {
+    font-size: 24px;
+    color: #00ff00; /* Green color for the glowing effect */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: glow 2s infinite alternate;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* ... (previous styles) */
+
+/* Heading Styles */
+.heading-container {
+    text-align: center;
+    position: relative;
+    padding: 120px 0;
+    animation: fadeIn 1.5s ease-out; /* Add animation to the heading container */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    color: #fff;
+    position: relative;
+}
+
+.rgb-text {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+}
+
+.glow-text {
+    font-size: 24px;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: glow 2s infinite alternate;
+}
+
+
+
+/* Section Text Styles */
+.section-text {
+    color: #fff; 
+}
+
+/* ... (previous styles) */
+
+/* Banner Styles */
+#banner {
+    font-size: 48px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Image Styles */
+#image-container {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#image-container img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease; /* Add a transition effect */
+}
+
+nav ul li a:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+}
+
